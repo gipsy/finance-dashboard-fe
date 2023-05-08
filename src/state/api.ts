@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery }            from "@reduxjs/toolkit/query/react"
-import { GetKpisResponse, GetProductsResponse } from "@/state/types";
+import { createApi, fetchBaseQuery }                                     from "@reduxjs/toolkit/query/react"
+import { GetKpisResponse, GetProductsResponse, GetTransactionsResponse } from "@/state/types";
 
 export const api = createApi( {
   baseQuery: fetchBaseQuery( { baseUrl: import.meta.env.VITE_BASE_URL } ),
@@ -14,8 +14,11 @@ export const api = createApi( {
       query: () => "product/products/",
       providesTags: [ "Products" ]
     } ),
+    getTransactions: build.query<Array<GetTransactionsResponse>,void>({
+      query: () => "transaction/transactions/",
+    })
   } )
 } );
 
-export const { useGetKpisQuery, useGetProductsQuery } = api;
+export const { useGetKpisQuery, useGetProductsQuery, useGetTransactionsQuery } = api;
 
