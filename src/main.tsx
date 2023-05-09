@@ -1,6 +1,6 @@
 import React                             from 'react'
 import ReactDOM                          from 'react-dom/client'
-import App                               from '@/App.tsx'
+import App                               from '@/App'
 import { DevSupport }                    from "@react-buddy/ide-toolbox";
 import { ComponentPreviews, useInitial } from "./dev";
 import '@/index.css';
