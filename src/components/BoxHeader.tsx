@@ -1,5 +1,5 @@
-import FlexBetween                   from "@/components/FlexBetween";
-import { Box, Typography, useTheme } from "@mui/material";
+import FlexBetween                                 from "@/components/FlexBetween";
+import { Box, PaletteColor, Typography, useTheme } from "@mui/material";
 
 type Props = {
   icon?: React.ReactNode;
@@ -9,7 +9,7 @@ type Props = {
 };
 
 const BoxHeader = ({icon, title, subtitle, sideText}: Props) => {
-  const { palette } = useTheme();
+  const { palette }: PaletteColor = useTheme();
   
   return (
     <FlexBetween
