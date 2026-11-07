@@ -1,12 +1,12 @@
 # Finance Dashboard — Frontend
 
-> **Financeer** — a React single-page app that visualizes business finance data for operators and stakeholders.
+> Full-stack Finance Dashboard for operators: KPIs, revenue/expense trends, product economics, sales, and 12‑month forecasts. This repo is the React/Vite UI; data comes from the MongoDB REST API.
 
 **Backend (API & data):** [github.com/gipsy/finance-dashboard-be](https://github.com/gipsy/finance-dashboard-be)
 
 ## About this project
 
-**Finance Dashboard** is a small full-stack application for exploring company finances in one place: KPIs over time, product economics, and recent transactions, plus a simple revenue forecast. It is split across two repositories:
+**Finance Dashboard** is a full-stack app to explore company finances in one place—KPIs, trends, products, transactions, and revenue forecasting—split across two repositories:
 
 | Repository | Role |
 |------------|------|
