@@ -1,3 +1,14 @@
+# Dependencies
+node_modules
+.npmrc
+
+# Production build
+dist
+dist-ssr
+
+# Local env and Vite overrides
+*.local
+
 # Logs
 logs
 *.log
@@ -7,10 +18,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Test / coverage
+coverage
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Vercel
+.vercel
+
+# Environment (keep .env.example)
+.env*
+!.env.example
 
 # Editor directories and files
 .vscode/*
